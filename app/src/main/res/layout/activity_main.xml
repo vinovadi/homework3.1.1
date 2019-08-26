@@ -14,7 +14,9 @@
             android:layout_height="wrap_content"
             android:background="@color/colorOutput"
             android:gravity="end"
-            android:text="@string/output_txt"
+            android:text=""
+            android:hint="@string/output_txt"
+            android:textColorHint="@color/colorText"
             android:textColor="@color/colorText"
             android:textSize="40sp"
             android:padding="20dp"
@@ -25,7 +27,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/row1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="4"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/btnCancel"
@@ -86,7 +89,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/row2"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="3">
 
             <TextView
                 android:id="@+id/btn7"
@@ -139,14 +142,15 @@
                 android:padding="10dp"
                 android:background="@color/colorOperations"
                 android:textColor="@color/colorOutput"
-                android:text="@string/multiply_btn"/>
+                android:text="@string/multiply_btn"
+                android:visibility="gone"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/row3"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="3">
 
             <TextView
                 android:id="@+id/btn4"
@@ -199,7 +203,8 @@
                 android:padding="10dp"
                 android:background="@color/colorOperations"
                 android:textColor="@color/colorOutput"
-                android:text="@string/minus_btn"/>
+                android:text="@string/minus_btn"
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
@@ -207,7 +212,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/row4"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="3">
 
             <TextView
                 android:id="@+id/btn1"
@@ -260,7 +265,8 @@
                 android:padding="10dp"
                 android:background="@color/colorOperations"
                 android:textColor="@color/colorOutput"
-                android:text="@string/add_btn"/>
+                android:text="@string/add_btn"
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
@@ -268,7 +274,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/row5"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="3">
 
             <TextView
                 android:id="@+id/btn0"
@@ -308,7 +314,8 @@
                 android:padding="10dp"
                 android:background="@color/colorOperations"
                 android:textColor="@color/colorOutput"
-                android:text="@string/equals_btn"/>
+                android:text="@string/equals_btn"
+                android:visibility="gone"/>
         </LinearLayout>
 
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.calculator_interface;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView mZeroBtn;
     private TextView mPointBtn;
     private TextView mEqualsBtn;
+    private String input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initViews();
+        inputNumbers();
     }
 
     public void initViews() {
@@ -51,5 +54,95 @@ public class MainActivity extends AppCompatActivity {
         mZeroBtn = findViewById(R.id.btn0);
         mPointBtn = findViewById(R.id.btnPoint);
         mEqualsBtn = findViewById(R.id.btnEquals);
+    }
+
+    public void inputNumbers() {
+        mOneBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mOneBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mTwoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mTwoBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mThreeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mThreeBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mFourBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mFourBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mFiveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mFiveBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mSixBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mSixBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mSevenBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mSevenBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mEightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mEightBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mNineBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mNineBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mZeroBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mZeroBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
+
+        mPointBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                input = mPointBtn.getText().toString();
+                mOutputTxt.append(input);
+            }
+        });
     }
 }
